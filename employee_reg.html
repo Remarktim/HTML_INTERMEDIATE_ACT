@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,6 +69,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Employee Registration</h1>
@@ -104,5 +106,25 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById("registration-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var formData = {
+                "Last Name": document.getElementById("last_name").value,
+                "First Name": document.getElementById("first_name").value,
+                "Middle Name": document.getElementById("middle_name").value,
+                "Birthdate": document.getElementById("birthdate").value,
+                "Department": document.getElementById("department").value,
+                "Office": document.getElementById("office").value
+            };
+
+            for (var key in formData) {
+                console.log(key + ":", formData[key]);
+            }
+        });
+    </script>
 </body>
+
 </html>
