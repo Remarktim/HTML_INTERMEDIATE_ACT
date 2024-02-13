@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+      }
+      h2 {
+        text-align: center;
+      }
+      th,
+      td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+      .available {
+        color: green;
+      }
+      .not-available {
+        color: red;
+      }
+      tr {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Medicine Information</h2>
+
+    <table id="medicineTable">
+      <tr>
+        <th>Product Name</th>
+        <th>Price (PHP)</th>
+        <th>Availability</th>
+      </tr>
+      <tr>
+        <td>Paracetamol</td>
+        <td>₱50.00</td>
+        <td class="available">Available</td>
+      </tr>
+      <tr>
+        <td>Amoxicillin</td>
+        <td>₱100.00</td>
+        <td class="not-available">Out of Stock</td>
+      </tr>
+      <tr>
+        <td>Loperamide</td>
+        <td>₱75.00</td>
+        <td class="available">Available</td>
+      </tr>
+      <tr>
+        <td>Simvastatin</td>
+        <td>₱150.00</td>
+        <td class="available">Available</td>
+      </tr>
+      <tr>
+        <td>Omeprazole</td>
+        <td>₱80.00</td>
+        <td class="not-available">Out of Stock</td>
+      </tr>
+    </table>
+  </body>
+</html>
